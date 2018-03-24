@@ -52,6 +52,13 @@ rails require node js
 
     sudo apt-get update
     sudo apt-get install postgresql postgresql-contrib
+### Configure PostgreSQL to start up upon server boot.
+
+    update-rc.d postgresql enable
+
+### Run Postgres Server
+
+    service postgresql start
 
 ### Enter postgres console
 change user to postgres
@@ -77,4 +84,3 @@ Check if connected
 
     \conninfo
     You are connected to database "postgres" as user "postgres" via socket in "/var/run/postgresql" at port "5432".
-
