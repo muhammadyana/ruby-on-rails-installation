@@ -61,6 +61,8 @@ change user to postgres
 
 Create new user
 
+    createuser --interactive
+    or if you not logged ass postgres user
     sudo -u postgres createuser --interactive
 
 Create DB 
@@ -75,9 +77,4 @@ Check if connected
 
     \conninfo
     You are connected to database "postgres" as user "postgres" via socket in "/var/run/postgresql" at port "5432".
-
-
-
-
-
 
