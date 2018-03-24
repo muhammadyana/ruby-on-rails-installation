@@ -61,7 +61,8 @@ change user to postgres
 
 Create new user
 
-    createuser --interactive
+    sudo -u postgres createuser --interactive
+
 Create DB 
 
     createdb user_name
