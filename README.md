@@ -69,17 +69,19 @@ change user to postgres
     sudo -i -u postgres
     psql
 
-Create new user
+### Create new user
 
     createuser --interactive
     or if you not logged ass postgres user
     sudo -u postgres createuser --interactive
 
-Create DB 
+### Create DB 
+create db must be same with your user pc, if your user **yana@ubuntu** make user yana
 
     createdb user_name
     sudo -i -u user_name
     psql
+
 If you want your user to connect to a different database, you can do so by specifying the database like this:
 
     psql -d postgres
