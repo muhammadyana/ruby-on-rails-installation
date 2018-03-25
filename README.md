@@ -55,6 +55,7 @@ rails require node js
 
     sudo apt-get update
     sudo apt-get install postgresql postgresql-contrib
+    sudo apt-get install postgresql postgresql-contrib libpq-dev
 ### Configure PostgreSQL to start up upon server boot.
 
     update-rc.d postgresql enable
