@@ -8,7 +8,7 @@
 
     curl -sSL https://get.rvm.io | bash -s stable
     
-    or if you want include with stable ruby try this one
+    or if you want include with stable ruby try this one, and u can skip for Install ruby version section
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 
