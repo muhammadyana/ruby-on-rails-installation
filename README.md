@@ -11,7 +11,11 @@
     or if you want include with stable ruby try this one, and u can skip for Install ruby version section
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
+### inisialisasi rvm 
 
+    source ~/.rvm/scripts/rvm
+    rvm requirements
+    
 ----------
 ### Install ZSH (This is recommended) 
 
@@ -29,11 +33,6 @@
     # Add plugin to 
     plugins=(git zsh-autosuggestions rails rvm ruby)
     
-
-### inisialisasi rvm 
-
-    source ~/.rvm/scripts/rvm
-    rvm requirements
 
 ### Check if RVM was installed
 
