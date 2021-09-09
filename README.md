@@ -13,6 +13,23 @@
 
 
 ----------
+### inisialisasi ZHS (This is recommended) 
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+### inisialisasi ZHS Plugin syntax highlighting (optional)
+
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+    echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+### inisialisasi ZHS Plugin syntax highlighting (optional)
+
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    nano ~/.zshrc
+    # Add plugin to 
+    plugins=(git zsh-autosuggestions rails rvm ruby)
+    
+
 ### inisialisasi rvm 
 
     source ~/.rvm/scripts/rvm
