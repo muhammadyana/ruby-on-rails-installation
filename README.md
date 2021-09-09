@@ -15,24 +15,7 @@
 
     source ~/.rvm/scripts/rvm
     rvm requirements
-    
-----------
-### Install ZSH (This is recommended) 
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-### Install ZSH Plugin syntax highlighting (optional)
-
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-    echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-
-### Install ZSH Plugin syntax highlighting (optional)
-
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    nano ~/.zshrc
-    # Add plugin to 
-    plugins=(git zsh-autosuggestions rails rvm ruby)
-    
 
 ### Check if RVM was installed
 
@@ -54,6 +37,25 @@
 ### Install Bundler
 
     gem install bundler -V --no-ri --no-rdoc
+
+
+----------
+### Install ZSH (This is recommended) 
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+### Install ZSH Plugin syntax highlighting (optional)
+
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+    echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+### Install ZSH Plugin syntax highlighting (optional)
+
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    nano ~/.zshrc
+    # Add plugin to 
+    plugins=(git zsh-autosuggestions rails rvm ruby)
+    
 
 ### Setting up SSH Keys
 
