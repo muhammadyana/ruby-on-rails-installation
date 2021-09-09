@@ -26,23 +26,24 @@
 
 ### Install ruby version
 
-    rvm install 2.4.1 
+    rvm install 2.4.1 # if u want install specific ruby version use `rvm install x.x.x`
     rvm use 2.4.1 --default
+    
 
 ### cek if ruby was installed
 
     ruby -v
     ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin17]
     
-### Installing Rails and Bundler
+### Install Bundler
 
-    gem install rails -V --no-ri --no-rdoc
     gem install bundler -V --no-ri --no-rdoc
 
 ### Setting up SSH Keys
 
     ssh -T git@github.com
     Permission denied (publickey)
+    
 ### setting SSH 
 
     ssh-keygen -t rsa
@@ -54,6 +55,35 @@ rails require node js
 
     sudo apt-get install nodejs
     sudo apt-get install npm
+
+### Install Yarn
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt update && sudo apt install yarn
+
+### Install Mimemagick (Optional)
+    sudo apt-get update -y
+    sudo apt-get install -y ruby-mini-magick
+
+### Install Nginx
+    sudo apt update && sudo apt install nginx
+    sudo ufw app list
+    sudo ufw allow 'Nginx HTTP'
+    sudo ufw status
+
+
+### Install Redis
+    sudo apt update && sudo apt install redis-server
+
+Edit ```redis.conf```
+
+    sudo nano /etc/redis/redis.conf
+change to ```supervised systemd```
+Restart redis
+
+    sudo systemctl restart redis.service
+
+
 
 ### Install Postgresql
 
